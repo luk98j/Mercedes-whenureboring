@@ -1,0 +1,372 @@
+@font-face{
+	font-family:Planer-Regularimp;
+	font-family:src:url(Planer-Regular.otf);
+}
+
+#tło1{
+background-image:url('kropki1.png');
+height:250px;
+width:960px;
+margin-top:-50px;
+}
+#formularz{
+color:blue;
+margin-left:400px;
+margin-top:10px;
+float:right; 
+margin-right:15px;
+}
+#formularz2{
+	margin-left:0px;
+	margin-top:0px;
+	
+	}
+#logo{
+height: 204px;
+width: 300px;
+border: 0px solid black;
+margin-left:40px;
+margin-top:50px;
+background-image:url('benz-logo2.png');}
+
+
+#menu{
+width:100%;
+height:70px;
+border: 0px solid black;
+margin-left:-1px;
+margin-top:0px;
+}
+
+#lista{
+height:40px;
+width:750px;
+margin:0 auto;
+margin-top:25px;
+}
+
+#lista, li{
+float:left;
+margin-left:85px;
+}
+
+#duzemenu{
+
+height:100%;
+width:960px;
+}
+
+#menu2{
+background-image:url('cz1.jpg');
+width:20%;
+border:0px solid red;
+height:100%;
+float:left;
+}
+
+#tekst2,#tekst1{
+font-size:30px;
+text-shadow:0px 0px 6px red; 
+text-align:left;
+margin-left:-20px;
+}
+
+#tekst1{
+font-size:20px;
+text-shadow:0px 0px 6px red; 
+text-align:left;}
+
+
+
+#tekst3{
+font-size:30px;
+text-shadow:3px 0px 6px #66ccff; 
+text-align:center;
+}
+#tekst4{
+	color:white;
+	font-size:18px;
+	text-shadow:3px 2px 6px red; 
+	margin-left:20px;
+}
+
+#mercedes1{
+background-image:url('m1.png');
+height:300px;
+width:500px;
+z-index:2;
+margin-top:100px;
+}
+
+
+
+#menu3{
+z-index:1;
+background-image:url('cz2.png');
+width:60%;
+border:0px solid blue;
+height:100%;
+float:left;
+}
+#menu4{
+background-image:url('cz3.jpg');
+width:20%;
+border:0px solid green;
+height:100%;
+float:left;
+
+}
+#reklama1{
+background-image:url('reklama1.jpg');
+border:3px solid black;
+height:120px;
+width:120px;
+background-color:black;
+margin-top:50px;
+margin-left:35px;
+}
+
+#reklama2{
+background-image:url('reklama2.jpg');
+border:3px solid black;
+height:120px;
+width:120px;
+background-color:black;
+margin-top:100px;
+margin-left:35px;
+}
+
+#stopka{
+text-align:center;
+width:100%;
+border:0px solid black;
+}
+#lista2{
+margin-left:-80px;
+margin-top:30px;
+}
+#galeria1{
+	margin-left:50px;
+	margin-top:100px;
+	background-color:white;
+	width:470px;
+	
+}
+#map{
+	margin-top:100px;
+}
+body:after {
+  content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
+  display: none;
+}
+
+body.lb-disable-scrolling {
+  overflow: hidden;
+}
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none;
+}
+
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+}
+
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+
+  /* Image border */
+  border: 4px solid white;
+}
+
+.lightbox a img {
+  border: none;
+}
+
+.lb-outerContainer {
+  position: relative;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+
+  /* Background color behind image.
+     This is visible during transitions. */
+  background-color: white;
+}
+
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../images/loading.gif) no-repeat;
+}
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.lb-container > .nav {
+  left: 0;
+}
+
+.lb-nav a {
+  outline: none;
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  background: url(../images/prev.png) left 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  background: url(../images/next.png) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-data {
+  padding: 0 4px;
+  color: #ccc;
+}
+
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.lb-data .lb-caption a {
+  color: #4ae;
+}
+
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999;
+}
+
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../images/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+
+</style>
